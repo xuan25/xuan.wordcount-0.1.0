@@ -1,0 +1,34 @@
+{
+	"name": "wordcount",
+	"displayName": "Word Count",
+	"version": "0.1.0",
+	"publisher": "Xuan",
+	"description": "Word Count - a word counter on status bar.",
+	"author": {
+		"name": "Xuan"
+	},
+	"categories": [
+		"Other"
+	],
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"icon": "images/icon.svg",
+	"galleryBanner": {
+		"color": "#C80000",
+		"theme": "dark"
+	},
+	"activationEvents": [
+		"onLanguage:markdown",
+		"onLanguage:plaintext"
+	],
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"main": "./out/extension",
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"vscode": "0.10.x"
+	}
+}
